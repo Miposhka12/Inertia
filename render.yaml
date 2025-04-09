@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: inertia-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: ./start.sh
+    envVars:
+      - key: BOT_TOKEN
+        value: вставь_сюда_токен_бота
+      - key: OPENAI_API_KEY
+        value: вставь_сюда_ключ_OpenAI
