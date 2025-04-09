@@ -46,7 +46,7 @@ def handle_channel_link(message):
         )
 
         completion = openai.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "Ты профессиональный редактор и стилист Telegram-каналов."},
                 {"role": "user", "content": prompt + "\n\n" + joined}
